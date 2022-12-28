@@ -2,3 +2,9 @@
 
 # qiita-sync
 Repository for managing my Qiita articles.
+
+# dir
+
+- aws
+
+Articles on AWS.
