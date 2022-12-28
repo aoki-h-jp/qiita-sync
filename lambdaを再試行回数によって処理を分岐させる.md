@@ -1,9 +1,10 @@
 <!--
 title:   AWS Lambdaの再試行回数によって処理を分岐させる方法
 tags:    AWS,lambda
-id:      
+id:      14a5573252fd4092e3c2
 private: false
 -->
+
 業務の都合でAWS Lambdaの処理を再試行回数によって分岐させる必要が出てきたので、その実装を含めシェアします。
 
 # 実現できることのイメージ
@@ -63,7 +64,7 @@ def lambda_handler(event, context):
         else:
             print('process C')
             raise
-        
+
     return {
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda!')
